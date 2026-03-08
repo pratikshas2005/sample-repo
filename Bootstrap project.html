@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GreenLedger</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+.hero{
+height:90vh;
+background: linear-gradient(rgba(0,128,0,0.7), rgba(0,128,0,0.7)),
+url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEryPTnw1E_I5Aa8oSGwKEINcnP47Okp0TdQ&s");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.navbar{
+background:transparent;
+position:absolute;
+width:100%;
+}
+.service-box{
+border:1px solid #e5e5e5;
+border-radius:10px;
+padding:30px;
+text-align:center;
+background:#fff;
+transition:0.3s;
+}
+
+.service-box:hover{
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.icon{
+font-size:40px;
+color:#2e7d5b;
+margin-bottom:15px;
+}
+
+.about-section{
+background:#f5f5f5;
+padding:60px 0;
+}
+
+.about-img{
+width:100%;
+border-radius:10px;
+}
+.contact-section{
+background:#f4f4f4;
+padding:60px 0;
+}
+
+.contact-box{
+max-width:600px;
+margin:auto;
+}
+
+.btn-green{
+background:#1f7a4c;
+color:white;
+}
+
+.btn-green:hover{
+background:#16633d;
+}
+
+footer{
+background:#1f7a4c;
+color:white;
+text-align:center;
+padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">GreenLedger</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link" href="#">Services</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1 class="display-4 fw-bold">
+Your Trusted Accounting Partner
+</h1>
+
+<p class="lead mt-3">
+Expert financial solutions for businesses of all sizes
+</p>
+
+<button class="btn btn-success mt-3 px-4 py-2">
+Get Started
+</button>
+
+</div>
+
+</section>
+
+
+<!-- Services Section -->
+
+<section class="py-5 bg-light">
+
+<div class="container text-center">
+
+<h3 class="fw-bold">Our Services</h3>
+
+</div>
+
+<!--</section>
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card h4 pb-2 mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card h4 pb-2 mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="service-box">
+<div class="icon">🧮</div>
+<h5>Tax Preparation</h5>
+<p>Comprehensive tax planning and filing to save you time and money.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box">
+<div class="icon">📈</div>
+<h5>Financial Consulting</h5>
+<p>Strategic advice to help your business grow sustainably.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="service-box">
+<div class="icon">📂</div>
+<h5>Bookkeeping</h5>
+<p>Accurate and timely records to keep your finances in order.</p>
+</div>
+</div>
+
+</div>
+
+</div>-->
+
+
+<!-- About Section -->
+<section class="about-section">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+<h2>About GreenLedger</h2>
+<p>
+At GreenLedger, we specialize in delivering precise, reliable,
+and efficient accounting solutions. With years of industry
+experience, our team ensures that your financial management
+is seamless, giving you more time to focus on what matters
+most—your business.
+</p>
+</div>
+
+<div class="col-md-6">
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c"
+class="about-img">
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--<section class="py-5 bg-light">
+
+<div class="container text-center">
+
+<h3 class="fw-bold">Contact Us</h3>
+
+</div>
+<div class="mb-3  ">
+  <label for="exampleFormControlInput1" class="form-label">Name</label>
+  <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your name">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>-->
+<section class="contact-section">
+
+<div class="container">
+
+<h2 class="text-center mb-5">Contact Us</h2>
+
+<div class="contact-box">
+
+<form>
+
+<div class="mb-3">
+<label class="form-label">Name</label>
+<input type="text" class="form-control" placeholder="Your Name">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control" placeholder="Your Email">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+</div>
+
+<button class="btn btn-green w-100">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 GreenLedger. All Rights Reserved.
+</footer>
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR6GVnlmamoy_qT-k7vvfcdPkojbg3N_bXNg&s"></script>
+
+</body>
+</html>
