@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #op-div{
+            height:300px;
+            width: 80%;
+            border: solid black 2px;
+            padding: 12px;
+            margin:auto;
+        }
+
+        #div1{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            margin:auto;
+            margin-block: 16px;
+        }
+
+        .style1{
+            background-color: lightblue;
+        }
+
+        .style2{
+            border-radius: 24px;
+        }
+        .style3{
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="op-div"> 
+    <h1 id="result"> hello! welcome to dom  </h1>
+   
+    </div>
+
+    <div id="div1" class="style1 style2"></div>
+
+    <button onclick="myDiv.classList.add('style3')">add style</button>
+    <button onclick="myDiv.classList.remove('style3')">remove style</button>
+    <button onclick="myDiv.classList.toggle('style3')">toggle style</button>
+    <button onclick="newElement()"> create new element</button>
+
+    <script>
+        //const div = document.getElementById("op-div");
+        //const res = document.getelementbyid("result");
+
+        const div = document.getElementById("op-div");
+      const res = document.getElementById("result");
+      const myDiv = document.getElementById("div1");
+        //const div = document.getElementById("op-div");
+
+        //console.log(div.innerHTML);
+        console.log(div.innerHTML);
+
+        console.log(div.outerHTML);
+
+        console.log(res.innerText);
+
+
+        console.log("***************************************");
+        console.log(myDiv.classList);
+        console.log(mydiv.getattribute("class"));
+
+       // function newElement (){
+           // let tag = prompt("enter the name of tag you want to create");
+           // let content = prompt("write the content for adding into the new element");
+           // let newElement = document.createElement(tag);
+           // newElement.innerHTML = content;
+
+           // console.log(newElement);
+
+           // div.appendChild(newElement);
+
+            function newElement() {
+    let tag = prompt("Enter the name of tag you want to create");
+    let content = prompt("Write the content for adding into the new element");
+
+    let newElement = document.createElement(tag);
+    newElement.innerHTML = content;
+
+    console.log(newElement);
+
+    let div = document.getElementById("container"); // define div
+    div.appendChild(newElement);
+}
+            
+
+
+
+
+        
+    </script>
+</body>
+</html>
